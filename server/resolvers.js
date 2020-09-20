@@ -17,6 +17,7 @@ const Mutation = {
 };
 
 const Book = {
+  author: (book, args) => db.getAuthor(args.id),
   authors: (book) => db.getBookAuthors(book.id)
 };
 
